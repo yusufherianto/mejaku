@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Mejaku">
-        <activity android:name=".uploadscore.UploadScoreActivity"></activity>
+        <activity android:name=".uploadscore.UploadScoreActivity"/>
         <activity
-            android:name=".classes.CreateClassActivity"
+            android:name=".classes.CreateUpdateClassActivity"
             android:label="@string/create_class" />
         <activity
             android:name=".MainActivity"

@@ -10,4 +10,8 @@
     <string name="guide_choose_file">*csv file must containing student name, email and parent email</string>
     <string name="guide_upload">Select csv file containing scores to be uploaded</string>
     <string name="upload">Upload</string>
+    <string name="delete">delete</string>
+    <string name="edit">Edit</string>
+    <string name="update_class">Update Class</string>
+    <string name="update">Update</string>
 </resources>
