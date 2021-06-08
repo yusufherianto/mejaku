@@ -5,7 +5,6 @@ import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
-import android.view.MenuItem
 import android.view.View
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.annotation.RequiresApi
@@ -57,6 +56,7 @@ class UploadScoreActivity : AppCompatActivity(), View.OnClickListener {
         ) { isGranted: Boolean ->
             if (isGranted) {
                 Log.i("Permission: ", "Granted")
+                uploadData()
             } else {
                 Log.i("Permission: ", "Denied")
             }
@@ -136,12 +136,6 @@ class UploadScoreActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            android.R.id.home -> showAlertDialog()
-        }
-        return super.onOptionsItemSelected(item)
-    }
 
     override fun onBackPressed() {
         showAlertDialog()
