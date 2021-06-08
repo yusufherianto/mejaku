@@ -1,0 +1,3 @@
+References: https://github.com/Western-OC2-Lab/Student-Performance-and-Engagement-Prediction-eLearning-datasets
+
+In the notebook, model only use the Student Performance Prediction data but also explore Student Engagement Level Prediction data to determine the approaches should be used.

@@ -1,0 +1,3 @@
+Exported model in Tensorflow format.
+  Version 1 -> using normalization
+  Version 2 -> without normalization
