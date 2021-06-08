@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "194229098802",
+    "project_id": "mejaku",
+    "storage_bucket": "mejaku.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:194229098802:android:31954067d4af205a9ddf2b",
+        "android_client_info": {
+          "package_name": "com.steamtofu.mejaku"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "194229098802-3gb1un9q17en9kl058bmp1492u6jgv2t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfjAmdC0jSSfDkgIPhpvVW-NyFIb5c_7c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "194229098802-3gb1un9q17en9kl058bmp1492u6jgv2t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,4 +1,4 @@
-package com.steamtofu.mejaku.classes
+package com.steamtofu.mejaku.ui.createclass.createupdate
 
 import android.content.ContentValues
 import android.content.Intent
@@ -10,10 +10,10 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.steamtofu.mejaku.R
-import com.steamtofu.mejaku.classes.entity.ClassData
 import com.steamtofu.mejaku.databinding.ActivityCreateUpdateClassBinding
 import com.steamtofu.mejaku.db.DatabaseContract
 import com.steamtofu.mejaku.db.helper.ClassHelper
+import com.steamtofu.mejaku.entity.classes.entity.ClassData
 
 
 class CreateUpdateClassActivity : AppCompatActivity(), View.OnClickListener {

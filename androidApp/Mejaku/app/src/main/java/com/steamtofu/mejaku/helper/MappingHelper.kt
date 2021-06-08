@@ -1,8 +1,8 @@
 package com.steamtofu.mejaku.helper
 
 import android.database.Cursor
-import com.steamtofu.mejaku.classes.entity.ClassData
 import com.steamtofu.mejaku.db.DatabaseContract
+import com.steamtofu.mejaku.entity.classes.entity.ClassData
 
 object MappingHelper {
 

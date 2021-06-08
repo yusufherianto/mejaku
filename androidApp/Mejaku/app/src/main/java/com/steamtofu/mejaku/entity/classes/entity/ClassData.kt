@@ -1,4 +1,4 @@
-package com.steamtofu.mejaku.classes.entity
+package com.steamtofu.mejaku.entity.classes.entity
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

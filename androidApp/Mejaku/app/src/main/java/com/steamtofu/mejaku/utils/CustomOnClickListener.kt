@@ -1,4 +1,4 @@
-package com.steamtofu.mejaku
+package com.steamtofu.mejaku.utils
 
 import android.view.View
 

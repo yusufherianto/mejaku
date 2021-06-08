@@ -1,25 +1,26 @@
-package com.steamtofu.mejaku
+package com.steamtofu.mejaku.ui.createclass
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.PersistableBundle
 import android.view.Menu
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.snackbar.Snackbar
-import com.steamtofu.mejaku.adapter.ClassAdapter
-import com.steamtofu.mejaku.classes.CreateUpdateClassActivity
-import com.steamtofu.mejaku.classes.entity.ClassData
+import com.steamtofu.mejaku.R
 import com.steamtofu.mejaku.databinding.ActivityMainBinding
 import com.steamtofu.mejaku.db.helper.ClassHelper
+import com.steamtofu.mejaku.entity.classes.entity.ClassData
 import com.steamtofu.mejaku.helper.MappingHelper
+import com.steamtofu.mejaku.ui.createclass.adapter.ClassAdapter
+import com.steamtofu.mejaku.ui.createclass.createupdate.CreateUpdateClassActivity
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
 
-class MainActivity : AppCompatActivity(), View.OnClickListener {
+class MainClass : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var adapter: ClassAdapter
     private lateinit var binding: ActivityMainBinding
@@ -32,6 +33,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         binding.rvClass.layoutManager = LinearLayoutManager(this)
         binding.rvClass.setHasFixedSize(true)
@@ -106,7 +108,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 CreateUpdateClassActivity.REQUEST_UPDATE -> {
                     when (resultCode){
                         CreateUpdateClassActivity.RESULT_UPDATE -> {
-                            val classData = data.getParcelableExtra<ClassData>(CreateUpdateClassActivity.EXTRA_CLASS) as ClassData
+                            val classData = data.getParcelableExtra<ClassData>(
+                                CreateUpdateClassActivity.EXTRA_CLASS) as ClassData
                             val position = data.getIntExtra(CreateUpdateClassActivity.EXTRA_POSITION, 0)
                             adapter.updateItem(position, classData)
                             binding.rvClass.smoothScrollToPosition(position)

@@ -14,4 +14,13 @@
     <string name="edit">Edit</string>
     <string name="update_class">Update Class</string>
     <string name="update">Update</string>
+    <string name="predict_per_class">Predict per Class</string>
+    <string name="predict_by_yourself">Predict by yourself</string>
+    <string name="quiz">Quiz</string>
+    <string name="assignment_1">Assignment 1</string>
+    <string name="assignment_2">Assignment 2</string>
+    <string name="assignment_3">Assignment 3</string>
+    <string name="input_scores_to_predict_the_final_score">Input Scores to predict the final score</string>
+    <string name="predict_score">Predict Score</string>
+    <string name="predicted_score">Predicted Score:</string>
 </resources>

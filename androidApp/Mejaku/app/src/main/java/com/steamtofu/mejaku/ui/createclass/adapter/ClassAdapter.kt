@@ -1,4 +1,4 @@
-package com.steamtofu.mejaku.adapter
+package com.steamtofu.mejaku.ui.createclass.adapter
 
 import android.app.Activity
 import android.content.Intent
@@ -6,12 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.steamtofu.mejaku.CustomOnClickListener
 import com.steamtofu.mejaku.R
-import com.steamtofu.mejaku.classes.CreateUpdateClassActivity
-import com.steamtofu.mejaku.classes.entity.ClassData
 import com.steamtofu.mejaku.databinding.ItemClassRowBinding
-import com.steamtofu.mejaku.uploadscore.UploadScoreActivity
+import com.steamtofu.mejaku.entity.classes.entity.ClassData
+import com.steamtofu.mejaku.ui.createclass.createupdate.CreateUpdateClassActivity
+import com.steamtofu.mejaku.ui.uploadscore.UploadScoreActivity
+import com.steamtofu.mejaku.utils.CustomOnClickListener
 
 class ClassAdapter(private val activity: Activity) : RecyclerView.Adapter<ClassAdapter.ClassViewHolder>() {
 
@@ -67,12 +67,12 @@ class ClassAdapter(private val activity: Activity) : RecyclerView.Adapter<ClassA
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): ClassAdapter.ClassViewHolder {
+    ): ClassViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_class_row, parent, false)
         return ClassViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: ClassAdapter.ClassViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ClassViewHolder, position: Int) {
         holder.bind(listClasses[position])
     }
 
