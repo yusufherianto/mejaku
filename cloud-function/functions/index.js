@@ -8,8 +8,8 @@ admin.initializeApp()
 
 //register the gmail sender account
 let transporter = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
-    port: 465,
+    host: '**************',
+    port: '***',
     secure: true,
     auth: {
         user: '**********************', 
