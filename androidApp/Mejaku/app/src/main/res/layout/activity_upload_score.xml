@@ -20,6 +20,20 @@
         tools:ignore="ContentDescription" />
 
     <TextView
+        android:id="@+id/tv_link_sample_csv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/csv_format_file"
+        android:textStyle="italic"
+
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_choose_file"
+        app:layout_constraintTop_toBottomOf="@+id/btn_choose_file" />
+
+    <TextView
         android:id="@+id/tv_guide"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -11,7 +11,7 @@ import com.google.android.material.snackbar.Snackbar
 import com.steamtofu.mejaku.R
 import com.steamtofu.mejaku.databinding.ActivityMainBinding
 import com.steamtofu.mejaku.db.helper.ClassHelper
-import com.steamtofu.mejaku.entity.classes.entity.ClassData
+import com.steamtofu.mejaku.entity.classes.ClassData
 import com.steamtofu.mejaku.helper.MappingHelper
 import com.steamtofu.mejaku.ui.createclass.adapter.ClassAdapter
 import com.steamtofu.mejaku.ui.createclass.createupdate.CreateUpdateClassActivity
