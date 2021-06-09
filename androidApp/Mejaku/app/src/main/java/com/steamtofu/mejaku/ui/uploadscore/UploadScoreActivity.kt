@@ -1,7 +1,9 @@
 package com.steamtofu.mejaku.ui.uploadscore
 
 import android.Manifest
+import android.content.Intent
 import android.content.pm.PackageManager
+import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
@@ -83,6 +85,7 @@ class UploadScoreActivity : AppCompatActivity(), View.OnClickListener {
             e.printStackTrace()
         }
 
+        binding.tvLinkSampleCsv.setOnClickListener(this)
         binding.btnChooseFile.setOnClickListener(this)
         binding.btnUpload.setOnClickListener(this)
 
@@ -106,6 +109,10 @@ class UploadScoreActivity : AppCompatActivity(), View.OnClickListener {
                         requestStoragePermission.launch(Manifest.permission.READ_EXTERNAL_STORAGE)
                     }
                 }
+            }
+            R.id.tv_link_sample_csv -> {
+                val uri = Uri.parse("https://drive.google.com/file/d/1ELsqCzSSjLYiKDpZ3puHc-3ynjkGCVH8/view?usp=sharing")
+                startActivity(Intent(Intent.ACTION_VIEW, uri))
             }
         }
     }

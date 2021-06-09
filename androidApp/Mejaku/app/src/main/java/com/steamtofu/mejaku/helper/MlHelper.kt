@@ -35,15 +35,14 @@ object MlHelper {
         return outputVal[0][0]
     }
 
-    fun doInferenceByYourself(tflite: Interpreter,studentScores: FloatArray): Float {
-
+    fun doInferenceByYourself(tflite: Interpreter, floatArray: FloatArray): Float {
 
         val outputVal = Array(1) {
             FloatArray(
                 1
             )
         }
-        tflite.run(studentScores, outputVal)
+        tflite.run(floatArray, outputVal)
 
         return outputVal[0][0]
     }
