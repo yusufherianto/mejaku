@@ -1,3 +1,6 @@
+//steamtofu-team
+//mejaku-project
+//cloud function to send email with firestore trigger
 const functions = require("firebase-functions");
 const admin = require("firebase-admin") 
 const nodemailer = require('nodemailer');
@@ -9,8 +12,8 @@ let transporter = nodemailer.createTransport({
     port: 465,
     secure: true,
     auth: {
-        user: 'simbolons602@gmail.com',
-        pass: '12345678ya'
+        user: '**********************', 
+        pass: '**********'
     }
 });
 
@@ -38,7 +41,7 @@ exports.sendStudentEmail = functions.region('asia-southeast2').firestore
     };
 
         const mailOptions = {
-            from: `Mejaku Team <simbolons602@gmail.com>`,
+            from: `Mejaku Team <**********************>`,
             to: student,
             subject: 'Mejaku - Your Learning Result',
             html:   `<p>Hi, ${name}!</p>
@@ -85,7 +88,7 @@ exports.sendParentEmail = functions.region('asia-southeast2').firestore
     };
 
         const mailOptions = {
-            from: `Mejaku Team <simbolons602@gmail.com>`,
+            from: `Mejaku Team <**********************>`,
             to: parent,
             subject: 'Mejaku - Your Child\'s Learning Result',
             html:   `<p>Hi, ${name} \parents</p>
