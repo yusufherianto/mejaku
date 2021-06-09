@@ -133,7 +133,7 @@ class UploadScoreActivity : AppCompatActivity(), View.OnClickListener {
             for (student in studentScoresList) {
                 if (student != null) {
                     val prediction = MlHelper.doInference(tflite, student)
-                    student.scoresPrediction = prediction
+                    student.scoresPrediction = prediction.toInt()
                     FirestoreHelper.insertData(student, firebaseDB)
                     showSnackbarMessagge("Student scores successfully uploaded")
                 }

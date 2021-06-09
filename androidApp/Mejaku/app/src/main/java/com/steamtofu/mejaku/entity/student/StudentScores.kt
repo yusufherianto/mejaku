@@ -8,5 +8,5 @@ data class StudentScores(
     val assignment1: Float,
     val assignment2: Float,
     val assignment3: Float,
-    var scoresPrediction: Float = 0.0f
+    var scoresPrediction: Int = 0
 )

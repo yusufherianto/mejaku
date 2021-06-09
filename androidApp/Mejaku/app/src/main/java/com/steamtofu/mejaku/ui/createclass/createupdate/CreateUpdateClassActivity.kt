@@ -13,7 +13,7 @@ import com.steamtofu.mejaku.R
 import com.steamtofu.mejaku.databinding.ActivityCreateUpdateClassBinding
 import com.steamtofu.mejaku.db.DatabaseContract
 import com.steamtofu.mejaku.db.helper.ClassHelper
-import com.steamtofu.mejaku.entity.classes.entity.ClassData
+import com.steamtofu.mejaku.entity.classes.ClassData
 
 
 class CreateUpdateClassActivity : AppCompatActivity(), View.OnClickListener {

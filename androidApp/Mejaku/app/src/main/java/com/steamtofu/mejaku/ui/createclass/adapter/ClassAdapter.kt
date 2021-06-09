@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.steamtofu.mejaku.R
 import com.steamtofu.mejaku.databinding.ItemClassRowBinding
-import com.steamtofu.mejaku.entity.classes.entity.ClassData
+import com.steamtofu.mejaku.entity.classes.ClassData
 import com.steamtofu.mejaku.ui.createclass.createupdate.CreateUpdateClassActivity
 import com.steamtofu.mejaku.ui.uploadscore.UploadScoreActivity
 import com.steamtofu.mejaku.utils.CustomOnClickListener
