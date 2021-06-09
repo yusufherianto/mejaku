@@ -1,3 +1,6 @@
-# mejaku
+# Mejaku
 
 Mejaku is education application that can predict the student final score. It can notify the parents to monitor their child to study more outside scheduled study session by teacher so student can achieve the optimal learning results.
+
+Workflow
+<img width="431" alt="FC Mejaku" src="https://user-images.githubusercontent.com/58942967/121347005-efa3fb00-c950-11eb-976d-6279ca46ce7a.png">
