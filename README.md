@@ -5,4 +5,7 @@ Mejaku is education application that can predict the student final score. It can
 <br>
 Workflow
 <br>
-<img width="431" alt="FC Mejaku" src="https://user-images.githubusercontent.com/58942967/121347005-efa3fb00-c950-11eb-976d-6279ca46ce7a.png">
+<img width="431" alt="FC Mejaku" src="https://user-images.githubusercontent.com/58942967/121347005-efa3fb00-c950-11eb-976d-6279ca46ce7a.png"><br>
+
+<h3>Application and Cloud Infrastructure</h3>
+<img widht="400" alt=cloud-infastructure src="https://github.com/yusufherianto/mejaku/blob/main/img/cloudDesign.png">
